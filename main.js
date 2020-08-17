@@ -43,7 +43,7 @@ searchSong.addEventListener("keypress",event =>{
     })
 })
 
-// all matched lyrics
+// matching lyrics
 
 searchSongBtn.addEventListener('click',event=>{
     if(searchSong.value.length < 1){
@@ -86,7 +86,7 @@ searchSongBtn.addEventListener('click',event=>{
                     .then(data => {
                         // console.log(data.lyrics)
                         if(data.lyrics==undefined){
-                            textContent.innerHTML=`<p style="color:red; text-align:center;">At this time, this lyrics is not available , Please try again later</p>`
+                            textContent.innerHTML=`<p style="color:red; text-align:center;">At this time, I am on vacation , Please get some muri and eat after that try again</p>`
                                 textContent.style.display="block"
                                 
                         }else{
