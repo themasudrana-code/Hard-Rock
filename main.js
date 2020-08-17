@@ -86,7 +86,7 @@ searchSongBtn.addEventListener('click',event=>{
                     .then(data => {
                         // console.log(data.lyrics)
                         if(data.lyrics==undefined){
-                            textContent.innerHTML=`<p style="color:red; text-align:center;">At this time, I am on vacation , Please get some muri and eat after that try me</p>`
+                            textContent.innerHTML=`<p style="color: darkred; background: yellow; max-width:800px; margin: auto; padding:20px; margin-bottom:10px; text-align:center">At this time, I am on vacation , Please get some muri and eat after that try me</p>`
                                 textContent.style.display="block"
                                 
                         }else{
