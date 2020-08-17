@@ -57,7 +57,7 @@ searchSongBtn.addEventListener('click',event=>{
         searchSong.style.color = "black"
     let api = `https://api.lyrics.ovh/suggest/${searchSong.value}`
     document.getElementById("lyricsContent").style.display="none"
-    for(let i=1; i<=15 ;i++){
+    for(let i=1; i<=10 ;i++){
         document.getElementById("textContent"+i).style.display="none"
     }
     fetch(api)
