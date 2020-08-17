@@ -65,7 +65,7 @@ searchSongBtn.addEventListener('click',event=>{
     .then(data => {
         // console.log(data.data.length)
         if(data.data.length == 0){
-            document.getElementById("alertUnavailable").innerHTML=`<h4 style="color:red; text-align:center">sorry this lyrics is not available, now</h4>`
+            document.getElementById("alertUnavailable").innerHTML=`<h4 style="color: darkred; background: yellow; max-width:800px; margin: auto; padding:20px; margin-bottom:30px; text-align:center">sorry! this lyrics is not available, now</h4>`
         }else{
             for(let i = 1; i <= data.data.length; i++){
             
@@ -86,7 +86,7 @@ searchSongBtn.addEventListener('click',event=>{
                     .then(data => {
                         // console.log(data.lyrics)
                         if(data.lyrics==undefined){
-                            textContent.innerHTML=`<p style="color:red; text-align:center;">At this time, I am on vacation , Please get some muri and eat after that try again</p>`
+                            textContent.innerHTML=`<p style="color:red; text-align:center;">At this time, I am on vacation , Please get some muri and eat after that try me</p>`
                                 textContent.style.display="block"
                                 
                         }else{
